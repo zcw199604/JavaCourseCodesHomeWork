@@ -1,12 +1,9 @@
 package zcw.gateway.router;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public interface HttpEndpointRouter {
-    
-    String route(LinkedList<String> endpoints);
-    
+
+    String route();
+
     // Load Balance
     // Random
     // RoundRibbon 
@@ -14,5 +11,5 @@ public interface HttpEndpointRouter {
     // - server01,20
     // - server02,30
     // - server03,50
-    
+
 }

@@ -11,18 +11,19 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import lombok.Data;
+import zcw.gateway.router.HttpEndpointRouter;
 
-import java.util.List;
+import java.util.Map;
 
 @Data
 public class HttpInboundServer {
 
     private int port;
-    
-    private List<String> proxyServers;
 
-    public HttpInboundServer(int port, List<String> proxyServers) {
-        this.port=port;
+    private Map<String, HttpEndpointRouter> proxyServers;
+
+    public HttpInboundServer(int port, Map<String, HttpEndpointRouter> proxyServers) {
+        this.port = port;
         this.proxyServers = proxyServers;
     }
 
