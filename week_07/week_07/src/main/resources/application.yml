@@ -1,0 +1,12 @@
+
+spring:
+  redis:
+    host: 82.156.12.100
+    port: 6666
+    password: qwertyuiop123
+  datasource:
+    url: jdbc:mysql://bj-cynosdbmysql-grp-cxo8ezq6.sql.tencentcdb.com:26937/smzdm?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: python_cron
+    password: a305512775.
+    driver-class-name: com.mysql.jdbc.Driver
