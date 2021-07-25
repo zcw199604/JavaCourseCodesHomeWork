@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    io:
+      kimmking:
+        cache : info
+
+# 作业，在这里使用spring boot配置各项内容，
+spring:
+  redis:
+    sentinel:
+      master: mymaster
+      nodes: 192.168.101.104:16381,192.168.101.104:16382
